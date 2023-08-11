@@ -1,0 +1,10 @@
+---
+title: "First Part"
+duration: 4
+---
+
+Duration example : []{#duration}
+
+In document : {{< meta duration >}}
+
+{{< include ../_includes/recaptable.qmd >}}

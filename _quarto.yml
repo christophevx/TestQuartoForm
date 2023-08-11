@@ -1,0 +1,28 @@
+book:
+  author: An author
+  chapters:
+  - index.qmd
+  - chapters:
+    - "01 - First part/01 - First chapter.qmd"
+    - "01 - First part/02 - Second chapter.qmd"
+    part: "Introduction"
+  - chapters:
+    - "02 - Second Part/01 - First chapter.qmd"
+    - "02 - Second Part/02 - Second chapter.qmd"
+    part: "Another thing"
+  date: 26/07/2023
+  title: "What I want to do"
+format:
+  pdf:
+    documentclass: book
+    fontsize: 12pt
+    header-includes:
+    - \makeatletter
+    - \@addtoreset{chapter}{part}
+    - \makeatother
+    mainfont: Imprima-Regular.ttf
+    papersize: A4
+    sansfont: Voces-Regular.ttf
+project:
+  output-dir: _book
+  type: book
